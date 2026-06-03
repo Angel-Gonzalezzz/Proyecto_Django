@@ -1,0 +1,23 @@
+{% extends "admin/login.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+
+<style>
+
+body.login{
+    background-image: url("{% static 'fondo1.jpg' %}") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.login #container{
+    background: rgba(0,0,0,0.75) !important;
+    border-radius: 15px !important;
+}
+
+</style>
+
+{% endblock %}
